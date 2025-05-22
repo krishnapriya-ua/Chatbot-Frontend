@@ -8,14 +8,14 @@
     overflow: hidden;
     width: 70%;
     justify-self: anchor-center;
+
 }
-
-
 
 .chat-body {
   flex-grow: 1;
   overflow-y: auto;
   background-color: #f5f5f5;
+  scrollbar-width: none;
 }
 
 .chat-footer {
