@@ -16,7 +16,7 @@ recognition.lang = 'en-US'
 recognition.maxAlternatives = 1;
 
 export default function Chatbot() {
-
+  const backendURL = import.meta.env.VITE_BACKEND_URL
   const [inputText,setInputText] = useState('')
   const [messages,setMessages] = useState<{role:"user" | "bot"; text:string}[]>([])
   const [audioEnabled,setAudioEnabled] = useState(false)
@@ -56,7 +56,7 @@ export default function Chatbot() {
 
     try {
 
-    const response = await axios.post('http://localhost:5000/api/chat',
+    const response = await axios.post(`${backendURL}/chat`,
       {message:userMessage},
       {headers:{'Content-Type':'application/json'}}
     )
