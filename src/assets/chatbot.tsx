@@ -93,7 +93,7 @@ export default function Chatbot() {
         <div className="chat-footer d-flex p-2 gap-2 align-items-center">
           <input
             type="text"
-            placeholder="Ask anything here"
+            placeholder="Ask anything here !"
             className="form-control"
             style={{fontSize:'small'}}
             value={inputText}
