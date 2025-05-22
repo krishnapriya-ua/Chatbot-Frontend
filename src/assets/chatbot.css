@@ -11,6 +11,16 @@
 
 }
 
+.chat-header {
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.85rem;
+  LETTER-SPACING: 1PX;
+  background: black;
+  color: white !important;
+}
+
+
 .chat-body {
   flex-grow: 1;
   overflow-y: auto;

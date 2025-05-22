@@ -83,7 +83,9 @@ export default function Chatbot() {
   return (
     <div className="container">
       <div className="chatbox rounded shadow-sm">
-
+        <div className="chat-header py-2 px-3 border-bottom small fw-semibold text-muted">
+        <span>CHAT WITH VOICE BOT</span>
+        </div>
         <div className="chat-body p-3" id="chat-body">
             {messages.map((m,i)=>(
               <div key={i} className={`message ${m.role}`}>{m.text}</div>
@@ -93,7 +95,7 @@ export default function Chatbot() {
         <div className="chat-footer d-flex p-2 gap-2 align-items-center">
           <input
             type="text"
-            placeholder="Ask anything here !"
+            placeholder="Ask anything here"
             className="form-control"
             style={{fontSize:'small'}}
             value={inputText}
